@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-size: 1.6rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 16px */
+:root {
+    --principal: #1750a1;
+    --fons: #f3f1ec;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 20px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+header {
+    background-color: var(--principal);
+    color: white;
+}
+
+
+.galeria figure {
+    margin: 0 0 16px;
+    padding-bottom: 16px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.galeria img {
+    width: 100%;
+    display: block;
+}
+
+.galeria figcaption {
+    padding: 10px;
+}
+
+.galeria span {
+    visibility: hidden;
+}
+
+
+.banner {
+    visibility: hidden;
+}
+
+@media (min-width:576px) {
+    .galeria figure {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
+
+}
+
+@media (min-width:768px) {
+    nav li {
+        display: inline-block;
+    }
+
+    .galeria span {
+        visibility: visible;
+    }
+
+    .banner {
+        visibility: visible;
+    }
+}
+
+@media (min-width:992px) {
+    .galeria figure {
+        width: 26%;
+    }
+}
+
+@media (min-width:992px) {
+    .galeria figure {
+        width: 20%;
+    }
+}

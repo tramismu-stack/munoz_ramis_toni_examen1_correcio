@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estils.css">
+    <title>Contacte · Bicis Tramuntana</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contacte · Bicis Tramuntana</h1>
+        <p class="eslogan">Venda i lloguer de bicicletes a Sóller</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Horari del taller</h2>
+    <table>
+        <caption>Horari del taller</caption>
+        <tr>
+            <th>Dia</th>
+            <th>Matí</th>
+            <th>Horabaixa</th>
+        </tr>
+        <tr>
+            <td>Dilluns</td>
+            <td colspan="2">Tancat</td>
+        </tr>
+        <tr>
+            <td>Dimarts</td>
+            <td rowspan="2">9 a 13</td>
+            <td>16 a 20</td>
+        </tr>
+        <tr>
+            <td>Dimecres</td>
+            <td>16 a 20</td>
+        </tr>
+    </table>
+
+    <h2>Escriu-nos</h2>
+    <form action="contacte.php" method="post">
+        <p>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+        </p>
+        <p>
+            <label for="correu">Correu</label>
+            <input type="email" id="correu" name="correu" required>
+        </p>
+        <p>Tipus de bici</p>
+        <p>
+            <input type="radio" id="carretera" name="bici" value="carretera">
+            <label for="carretera">Carretera</label>
+            <input type="radio" id="muntanya" name="bici" value="muntanya">
+            <label for="muntanya">Muntanya</label>
+            <input type="radio" id="urbana" name="bici" value="urbana">
+            <label for="urbana">Urbana</label>
+        </p>
+        <p>
+            <label for="missatge">Missatge</label>
+            <textarea id="missatge" name="missatge"></textarea>
+        </p>
+        <button type="submit">Envia</button>
+    </form>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

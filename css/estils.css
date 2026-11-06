@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* 16px */
+:root {
+    --principal: #1750a1;
+    --fons: #f3f1ec;
+}
+
+body {
+    background-color: var(--fons);
+}
+
+header {
+    background-color: var(--principal);
+    color: white;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+/* 32px */
+h2 {
+    font-size: 2.4rem;
+}
+
+/* 24px */
+nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 20px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+article {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 0px auto;
+    position: relative;
+    margin-top: 1%;
+}
+
+article img {
+    width: 100%;
+}
+
+main {
+    padding: 20px 16px 0;
+    margin-top: 1%;
+}
+
+.nou {
+    position: absolute;
+    /* el fill */
+    bottom: 15px;
+    left: 15px;
+}
+
+.nou {
+    padding: 4px 10px;
+    background-color: #2e7d32;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+article img {
+    width: 100%;
+    /* tan ampla com el contingut de l'article */
+}
+
+.eslogan {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .eslogan {
+        display: block;
+        /* ara sí que hi cap */
+    }
+
+    nav li {
+        display: inline-block;
+        /* els enllaços del menú, un al costat de l'altre */
+    }
+
+    article {
+        display: inline-block;
+        /* els dos articles, un al costat de l'altre */
+        width: 48%;
+        margin-top: 1%;
+        /* que s'alineïn per dalt */
+    }
+}
