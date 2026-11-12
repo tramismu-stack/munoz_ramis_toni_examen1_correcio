@@ -1,0 +1,113 @@
+/* Els dos trucs */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: Georgia, serif;
+    background-color: #f3f1ec;
+}
+
+header {
+    background-color: #1750a1;
+    color: white;
+    padding: 16px;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.banner {
+    display: none;
+    margin: 0;
+}
+
+main {
+    padding: 0 16px 16px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    /* si no hi caben, a la fila següent */
+    gap: 16px;
+    /* l’espai entre fotos: fora marges */
+}
+
+
+/* Mòbil: una foto per fila */
+figure {
+    margin: 0;
+    /* fora el marge de fàbrica
+*/
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d8d3c9;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+}
+
+.km {
+    display: none;
+    color: #6b6459;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+}
+
+
+/* A partir de 576 px: dues fotos per fila */
+@media (min-width: 576px) {
+    figure {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+/* A partir de 768 px: els km i el bàner */
+@media (min-width: 768px) {
+    .km {
+        display: inline;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* A partir de 992 px: tres fotos per fila */
+@media (min-width: 992px) {
+    figure {
+        width: calc((100% - 32px) / 3);
+    }
+}
